@@ -63,7 +63,7 @@ MS,Morningside,NL,4279 Lawrence Ave E,(416) 396-8881,M1E 2S8,M1E,136,West Hill ,
 MD,Mount Dennis,NL,1123 Weston Rd,(416) 394-1008,M6N 3S3,M6N,115,Mount Dennis ,11,York South-Weston 
 MP,Mount Pleasant,NL,599 Mt. Pleasant Rd,(416) 393-7737,M4S 2M5,M4S,99,Mount Pleasant East  ,22,St. Paul's 
 NT,New Toronto,NL,110 Eleventh St,(416) 394-5350,M8V 3G5,M8V,18,New Toronto  ,6,Etobicoke-Lakeshore 
-NYCL,North York Central,RR,5120 Yonge St,(416) 395-5535,M2N 5N9,M2N,38/51,Lansing-Westgate/ Willowdale East,23,Willowdale 
+NYCL,North York Central,RR,5120 Yonge St,(416) 395-5535,M2N 5N9,M2N,51,Willowdale East,23,Willowdale 
 ND,Northern District,DL ,40 Orchard View Blvd,(416) 393-7610,M4R 1B9,M4R,100,Yonge-Eglinton,16,Eglinton-Lawrence 
 NE,Northern Elms,NL,"123 B Rexdale Blvd, Unit 5",(416) 394-5230,M9W 1P1,M9W,1,West Humber-Clairville,2,Etobicoke North 
 OV,Oakwood Village Library and Arts Centre,NL,341 Oakwood Ave,(416) 394-1040,M6E 2W1,M6E,107,Oakwood-Vaughan ,15,Eglinton-Lawrence 
@@ -91,7 +91,7 @@ SW,Swansea Memorial,NL,95 Lavinia Ave,(416) 393-7695,M6S 3H9,M6S,87,High Park-Sw
 TA,Taylor Memorial,NL,1440 Kingston Rd,(416) 396-8939,M1N 1R3,M1N,122,Birchcliffe-Cliffside,36,Scarborough Southwest 
 TH,Thorncliffe,NL,48 Thorncliffe Park Dr,(416) 396-3865,M4H 1J7,M4H,55,Thorncliffe Park ,26,Don Valley West 
 TOD,Todmorden Room,NL,1081½ Pape Ave ,(416) 396-3875,M4K 3W6,M4K,58,Old East York ,29,Toronto-Danforth 
-TRL,Toronto Reference Library,RR,789 Yonge St,(416) 395-5577,M4W 2G8,M4W,95/98,Annex/ Rosedale-Moore Park ,27,Toronto Centre-Rosedale 
+TRL,Toronto Reference Library,RR,789 Yonge St,(416) 395-5577,M4W 2G8,M4W,98, Rosedale-Moore Park ,27,Toronto Centre-Rosedale 
 VV,Victoria Village,NL,184 Sloane Ave,(416) 395-5950,M4A 2C4,M4A,43,Victoria Village ,34,Don Valley East 
 WE,Weston,NL,2 King St,(416) 394-1016,M9N 1K9,M9N,113,Weston ,11,York South-Weston 
 WS,Woodside Square,NL,1571 Sandhurst Cir,(416) 396-8979,M1V 1V2,M1V,129,Agincourt North,41,Scarborough-Rouge River 
