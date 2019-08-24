@@ -1,4 +1,4 @@
-﻿--
+--
 --DROP DATABASE IF EXISTS "toronto_library_db"
 --
 --CREATE DATABASE "toronto_library_db"
@@ -10,7 +10,6 @@
 --    TABLESPACE = pg_default
 --    CONNECTION LIMIT = -1;
 
-DROP TABLE IF EXISTS "nbhd";
 CREATE TABLE "nbhd" (
     "id" int   NOT NULL,
     "name" varchar(100)   NULL,
@@ -19,7 +18,6 @@ CREATE TABLE "nbhd" (
      )
 );
 
-DROP TABLE IF EXISTS "ward_region";
 CREATE TABLE "ward_region" (
     "id" int   NOT NULL,
     "name" varchar(100)   NULL,
@@ -28,7 +26,6 @@ CREATE TABLE "ward_region" (
      )
 );
 
-DROP TABLE IF EXISTS "branch";
 CREATE TABLE "branch" (
     "id" varchar(4)   NOT NULL,
     "name" varchar(50)   NULL,
@@ -44,7 +41,6 @@ CREATE TABLE "branch" (
      )
 );
 
-DROP TABLE IF EXISTS "age_group";
 CREATE TABLE "age_group" (
     "id" int   NOT NULL,
     "name" varchar(10)   NULL,
@@ -53,7 +49,6 @@ CREATE TABLE "age_group" (
      )
 );
 
-DROP TABLE IF EXISTS "active_cardholders";
 CREATE TABLE "active_cardholders" (
     "age_group_id" int   NOT NULL,
     "branch_id" varchar(4)   NOT NULL,
@@ -64,7 +59,6 @@ CREATE TABLE "active_cardholders" (
      )
 );
 
-DROP TABLE IF EXISTS "annual_visits";
 CREATE TABLE "annual_visits" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
@@ -74,7 +68,6 @@ CREATE TABLE "annual_visits" (
      )
 );
 
-DROP TABLE IF EXISTS "catchment_population";
 CREATE TABLE "catchment_population" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
@@ -84,7 +77,6 @@ CREATE TABLE "catchment_population" (
      )
 );
 
-DROP TABLE IF EXISTS "collection_size";
 CREATE TABLE "collection_size" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
@@ -94,7 +86,6 @@ CREATE TABLE "collection_size" (
      )
 );
 
-DROP TABLE IF EXISTS "hours_of_operation";
 CREATE TABLE "hours_of_operation" (
     "branch_id" varchar(4)   NOT NULL,
     "day" varchar(10)   NULL,
@@ -105,7 +96,6 @@ CREATE TABLE "hours_of_operation" (
      )
 );
 
-DROP TABLE IF EXISTS "new_registrations";
 CREATE TABLE "new_registrations" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NULL,
@@ -115,7 +105,6 @@ CREATE TABLE "new_registrations" (
      )
 );
 
-DROP TABLE IF EXISTS "registered_cardholders";
 CREATE TABLE "registered_cardholders" (
     "age_group_id" int   NOT NULL,
     "branch_id" varchar(4)   NOT NULL,
@@ -126,7 +115,6 @@ CREATE TABLE "registered_cardholders" (
      )
 );
 
-DROP TABLE IF EXISTS "circulation";
 CREATE TABLE "circulation" (
     "age_group_id" int   NOT NULL,
     "branch_id" varchar(4)   NOT NULL,
@@ -137,7 +125,6 @@ CREATE TABLE "circulation" (
      )
 );
 
-DROP TABLE IF EXISTS "workstations";
 CREATE TABLE "workstations" (
     "branch_id" varchar(4)   NOT NULL,
     "value" int   NULL,
@@ -146,7 +133,6 @@ CREATE TABLE "workstations" (
      )
 );
 
-DROP TABLE IF EXISTS "workstation_users";
 CREATE TABLE "workstation_users" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NULL,
@@ -156,17 +142,6 @@ CREATE TABLE "workstation_users" (
      )
 );
 
-DROP TABLE IF EXISTS "annual_visits";
-CREATE TABLE "annual_visits" (
-    "branch_id" varchar(4)   NOT NULL,
-    "year" char(4)   NULL,
-    "value" int   NULL,
-    CONSTRAINT "pk_workstation_users" PRIMARY KEY (
-        "branch_id","year"
-     )
-);
-
-DROP TABLE IF EXISTS "events";
 CREATE TABLE "events" (
     "id" int   NOT NULL,
     "title" varchar(250)   NULL,
@@ -179,6 +154,20 @@ CREATE TABLE "events" (
     "date1" date   NULL,
     "age_group" varchar(100)   NULL,
     CONSTRAINT "pk_events" PRIMARY KEY (
+        "id"
+     )
+);
+
+CREATE TABLE "branch_wiki_data" (
+    "id" varchar(4)   NOT NULL,
+	"name" varchar(50)   NULL,
+	"neighbourhood" varchar(50)   NULL,
+	"year_built" char(4) NULL,
+	"year_opened" char(4) NULL,
+	"collection_size" int NULL,
+	"note" text NULL,
+    "year" char(4)   NULL,
+    CONSTRAINT "pk_workstation_users" PRIMARY KEY (
         "id"
      )
 );
@@ -227,7 +216,4 @@ ALTER TABLE "workstations" ADD CONSTRAINT "fk_workstations_branch_id" FOREIGN KE
 REFERENCES "branch" ("id");
 
 ALTER TABLE "workstation_users" ADD CONSTRAINT "fk_workstation_users_branch_id" FOREIGN KEY("branch_id")
-REFERENCES "branch" ("id");
-
-ALTER TABLE "annual_visits" ADD CONSTRAINT "fk_annual_visits_branch_id" FOREIGN KEY("branch_id")
 REFERENCES "branch" ("id");

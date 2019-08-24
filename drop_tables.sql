@@ -1,4 +1,3 @@
-﻿
 DROP TABLE IF EXISTS "active_cardholders";
 
 DROP TABLE IF EXISTS "annual_visits";
@@ -30,3 +29,5 @@ DROP TABLE IF EXISTS "nbhd";
 DROP TABLE IF EXISTS "ward_region";
 
 DROP TABLE IF EXISTS "age_group";
+
+DROP TABLE IF EXISTS "branch_wiki_data";
