@@ -158,21 +158,6 @@ CREATE TABLE "events" (
      )
 );
 
-CREATE TABLE "branch_wiki_data" (
-    "id" varchar(4)   NOT NULL,
-	"name" varchar(50)   NULL,
-	"neighbourhood" varchar(50)   NULL,
-	"year_built" char(4) NULL,
-	"year_opened" char(4) NULL,
-	"collection_size" int NULL,
-	"note" text NULL,
-    "year" char(4)   NULL,
-    CONSTRAINT "pk_workstation_users" PRIMARY KEY (
-        "id"
-     )
-);
-
-
 ALTER TABLE "branch" ADD CONSTRAINT "fk_branch_nbhd_no" FOREIGN KEY("nbhd_no")
 REFERENCES "nbhd" ("id");
 
