@@ -1,0 +1,1 @@
+postgres = {'host': 'localhost','user': 'root','passwd': '','db': 'write-math'}

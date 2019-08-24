@@ -12,14 +12,14 @@
 
 CREATE TABLE "branch" (
     "id" varchar(4)   NOT NULL,
-    "name" varchar(50)   NOT NULL,
-    "tier" char(2)   NOT NULL,
-    "address" varchar(60)   NOT NULL,
-    "contact_no" varchar(15)   NOT NULL,
-    "postal_code" char(7)   NOT NULL,
-    "fsa" char(3)   NOT NULL,
-    "nbhd_no" int   NOT NULL,
-    "ward_no" int   NOT NULL,
+    "name" varchar(50)   NULL,
+    "tier" char(2)   NULL,
+    "address" varchar(60)   NULL,
+    "contact_no" varchar(15)   NULL,
+    "postal_code" char(7)   NULL,
+    "fsa" char(3)   NULL,
+    "nbhd_no" int   NULL,
+    "ward_no" int   NULL,
     CONSTRAINT "pk_branch" PRIMARY KEY (
         "id"
      )
@@ -27,7 +27,7 @@ CREATE TABLE "branch" (
 
 CREATE TABLE "nbhd" (
     "id" int   NOT NULL,
-    "name" varchar(100)   NOT NULL,
+    "name" varchar(100)   NULL,
     CONSTRAINT "pk_nbhd" PRIMARY KEY (
         "id"
      )
@@ -35,7 +35,7 @@ CREATE TABLE "nbhd" (
 
 CREATE TABLE "ward_region" (
     "id" int   NOT NULL,
-    "name" varchar(100)   NOT NULL,
+    "name" varchar(100)   NULL,
     CONSTRAINT "pk_ward_region" PRIMARY KEY (
         "id"
      )
@@ -43,7 +43,7 @@ CREATE TABLE "ward_region" (
 
 CREATE TABLE "age_group" (
     "id" int   NOT NULL,
-    "name" varchar(10)   NOT NULL,
+    "name" varchar(10)   NULL,
     CONSTRAINT "pk_age_group" PRIMARY KEY (
         "id"
      )
@@ -53,7 +53,7 @@ CREATE TABLE "active_cardholders" (
     "age_group_id" int   NOT NULL,
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_active_cardholders" PRIMARY KEY (
         "age_group_id","branch_id","year"
      )
@@ -62,7 +62,7 @@ CREATE TABLE "active_cardholders" (
 CREATE TABLE "annual_visits" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_annual_visits" PRIMARY KEY (
         "branch_id","year"
      )
@@ -71,7 +71,7 @@ CREATE TABLE "annual_visits" (
 CREATE TABLE "catchment_population" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_catchment_population" PRIMARY KEY (
         "branch_id","year"
      )
@@ -80,7 +80,7 @@ CREATE TABLE "catchment_population" (
 CREATE TABLE "collection_size" (
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_collection_size" PRIMARY KEY (
         "branch_id","year"
      )
@@ -88,9 +88,9 @@ CREATE TABLE "collection_size" (
 
 CREATE TABLE "hours_of_operation" (
     "branch_id" varchar(4)   NOT NULL,
-    "day" varchar(10)   NOT NULL,
-    "duration" varchar(5)   NOT NULL,
-    "hours" varchar(20)   NOT NULL,
+    "day" varchar(10)   NULL,
+    "duration" varchar(5)   NULL,
+    "hours" varchar(20)   NULL,
     CONSTRAINT "pk_hours_of_operation" PRIMARY KEY (
         "branch_id","day"
      )
@@ -98,8 +98,8 @@ CREATE TABLE "hours_of_operation" (
 
 CREATE TABLE "new_registrations" (
     "branch_id" varchar(4)   NOT NULL,
-    "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "year" char(4)   NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_new_registrations" PRIMARY KEY (
         "branch_id","year"
      )
@@ -109,7 +109,7 @@ CREATE TABLE "registered_cardholders" (
     "age_group_id" int   NOT NULL,
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_registered_cardholders" PRIMARY KEY (
         "age_group_id","branch_id","year"
      )
@@ -119,7 +119,7 @@ CREATE TABLE "circulation" (
     "age_group_id" int   NOT NULL,
     "branch_id" varchar(4)   NOT NULL,
     "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_circulation" PRIMARY KEY (
         "age_group_id","branch_id","year"
      )
@@ -127,7 +127,7 @@ CREATE TABLE "circulation" (
 
 CREATE TABLE "workstations" (
     "branch_id" varchar(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_workstations" PRIMARY KEY (
         "branch_id"
      )
@@ -135,24 +135,34 @@ CREATE TABLE "workstations" (
 
 CREATE TABLE "workstation_users" (
     "branch_id" varchar(4)   NOT NULL,
-    "year" char(4)   NOT NULL,
-    "value" int   NOT NULL,
+    "year" char(4)   NULL,
+    "value" int   NULL,
     CONSTRAINT "pk_workstation_users" PRIMARY KEY (
         "branch_id","year"
      )
 );
 
+CREATE TABLE "annual_visits" (
+    "branch_id" varchar(4)   NOT NULL,
+    "year" char(4)   NULL,
+    "value" int   NULL,
+    CONSTRAINT "pk_workstation_users" PRIMARY KEY (
+        "branch_id","year"
+     )
+);
+
+
 CREATE TABLE "events" (
     "id" int   NOT NULL,
-    "title" varchar(250)   NOT NULL,
-    "date" varchar(50)   NOT NULL,
-    "time" varchar(10)   NOT NULL,
-    "enddate" varchar(50)   NOT NULL,
-    "description" text   NOT NULL,
-    "library" varchar(50)   NOT NULL,
-    "link" text   NOT NULL,
-    "date1" date   NOT NULL,
-    "age_group" varchar(100)   NOT NULL,
+    "title" varchar(250)   NULL,
+    "date" varchar(50)   NULL,
+    "time" varchar(10)   NULL,
+    "enddate" varchar(50)   NULL,
+    "description" text   NULL,
+    "library" varchar(50)   NULL,
+    "link" text   NULL,
+    "date1" date   NULL,
+    "age_group" varchar(100)   NULL,
     CONSTRAINT "pk_events" PRIMARY KEY (
         "id"
      )
@@ -204,3 +214,5 @@ REFERENCES "branch" ("id");
 ALTER TABLE "workstation_users" ADD CONSTRAINT "fk_workstation_users_branch_id" FOREIGN KEY("branch_id")
 REFERENCES "branch" ("id");
 
+ALTER TABLE "annual_visits" ADD CONSTRAINT "fk_annual_visits_branch_id" FOREIGN KEY("branch_id")
+REFERENCES "branch" ("id");
