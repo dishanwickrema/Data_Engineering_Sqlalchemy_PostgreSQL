@@ -58,6 +58,9 @@ Few queries run against the database are shown below.
 
 ![Query 2](query2.png)
 
+3. Libraries open on Sundays in Toronto Rosedale area
+![Query 3](query3.png)
+
 **Why we chose this?**
 
 Majority of the data was in CSV format so it seemed like a perfect choice to use relational database to store the final database.
