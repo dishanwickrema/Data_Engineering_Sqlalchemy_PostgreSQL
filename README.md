@@ -43,6 +43,8 @@ The data sets had multiple values so the first step was to normalize the data. F
 
 Database is normalized upto 3rd normal fom, and the relationships between parent and child tables are shown in the underneath entity relationship diagram.
 
+![ERD Diagram](erd.png)
+
 1. **Loading to the database**
 
 The final step was to write a script to create the database, tables and relationships. We used SQL alchemy to handle all data input into the PostgreSQL database. This data can be further used to run queries and find out more information about Toronto Public library.
