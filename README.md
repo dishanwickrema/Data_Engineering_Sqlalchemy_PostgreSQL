@@ -1,10 +1,9 @@
 # Week-13_ETL-Project
 
-Dishan Wickremasinghe
+											1. Dishan Wickremasinghe
+											2. Sumati Bhala
+											3. Muqtasid Alam
 
-Sumati Bhala
-
-Muqtasid Alam
 
 **Week 13 - ETL Project Report**
 
@@ -18,7 +17,7 @@ First step for the project was to extract the data. We also used the URL for the
 
 Following is the list of the csv files used to build the database.
 
-	a)**Active_Cardholders** = pd.read_csv(resources/Active_Cardholders.csv)_
+	a)Active_Cardholders = pd.read_csv(resources/Active_Cardholders.csv)_
 	b)Active_Cardholders_by_Cardholder_Type = _pd.read_csv(resources/Active_Cardholders_by_Cardholder_Type.csv)_
 	c)Annual_Visits = _pd.read_csv(resources/Annual_Visits.csv)_
 	d)Catchment_Population = _pd.read_csv(resources/Catchment_Population.csv)_
