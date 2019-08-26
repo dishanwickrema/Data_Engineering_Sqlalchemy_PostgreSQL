@@ -10,7 +10,7 @@ Muqtasid Alam
 
 The ETL project comprised of Toronto Public Library data, which combined multiple data sources to perform data extraction, normalization and finally transformed them to depict how different branches performed along with their in-house programs offered in the past years.
 
-The primary web source we used was &quot;[https://opendata.tpl.ca/](https://opendata.tpl.ca/).&quot; This link lead us to some equally interesting data to work with. The data was in different formats like JSON, CSV, KML, and XML.
+The primary web source we used was [https://opendata.tpl.ca/](https://opendata.tpl.ca/). This link lead us to some equally interesting data to work with. The data was in different formats like JSON, CSV, KML, and XML.
 
 **1. Data Sets Extracted**
 
@@ -18,22 +18,22 @@ First step for the project was to extract the data. We also used the URL for the
 
 Following is the list of the csv files used to build the database.
 
-	a)Active\_Cardholders _= pd.read\_csv(&quot;resources/Active\_Cardholders.csv&quot;)_
-	b)Active\_Cardholders\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Active\_Cardholders\_by\_Cardholder\_Type.csv&quot;)_
-	c)Annual\_Visits = _pd.read\_csv(&quot;resources/Annual\_Visits.csv&quot;)_
-	d)Catchment\_Population = _pd.read\_csv(&quot;resources/Catchment\_Population.csv&quot;)_
-	e)Collection\_Size = _pd.read\_csv(&quot;resources/Collection\_Size.csv&quot;)_
-	f)Hours\_of\_Operation = _pd.read\_csv(&quot;resources/Hours\_of\_Operation.csv&quot;)_
-	g)New\_Registrations = _pd.read\_csv(&quot;resources/New\_Registrations.csv&quot;)_
-	h)Registered\_Cardholders = _pd.read\_csv(&quot;resources/Registered\_Cardholders.csv&quot;)_
-	i)Registered\_Cardholders\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Registered\_Cardholders\_by\_Cardholder\_Type.csv&quot;)_
-	j)Circulation\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Circulation\_by\_Cardholder\_Type.csv&quot;)_
-	k)Workstations = _pd.read\_csv(&quot;resources/Workstations.csv&quot;)_
-	l)_Workstation\_Users = pd.read\_csv(&quot;resources/Workstation\_Users.csv&quot;)_
+	a)**Active_Cardholders** = pd.read_csv(resources/Active_Cardholders.csv)_
+	b)Active_Cardholders_by_Cardholder_Type = _pd.read_csv(resources/Active_Cardholders_by_Cardholder_Type.csv)_
+	c)Annual_Visits = _pd.read_csv(resources/Annual_Visits.csv)_
+	d)Catchment_Population = _pd.read_csv(resources/Catchment_Population.csv)_
+	e)Collection_Size = _pd.read_csv(resources/Collection_Size.csv)_
+	f)Hours_of_Operation = _pd.read_csv(resources/Hours_of_Operation.csv)_
+	g)New_Registrations = _pd.read_csv(resources/New_Registrations.csv)_
+	h)Registered_Cardholders = _pd.read_csv(resources/Registered_Cardholders.csv)_
+	i)Registered_Cardholders_by_Cardholder_Type = _pd.read_csv(resources/Registered_Cardholders_by_Cardholder_Type.csv)_
+	j)Circulation_by_Cardholder_Type = _pd.read_csv(resources/Circulation_by_Cardholder_Type.csv)_
+	k)Workstations = _pd.read_csv(resources/Workstations.csv)_
+	l)_Workstation_Users = pd.read_csv(resources/Workstation_Users.csv)_
 
 JSON
 
-	m)url = &quot;https://opendata.tpl.ca/resources/events&quot;
+	m)url = https://opendata.tpl.ca/resources/events
 
 **2. Transformation**
 
