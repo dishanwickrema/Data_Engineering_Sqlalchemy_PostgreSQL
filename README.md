@@ -35,7 +35,7 @@ JSON
 
 	m)url = &quot;https://opendata.tpl.ca/resources/events&quot;
 
-1. **Transformation**
+2. **Transformation**
 
 The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. There were different tables that need to be connected through primary key. It took us a lot of time to decide the schema. We used ERD to finalize the schema.
 
@@ -45,7 +45,7 @@ Database is normalized upto 3rd normal fom, and the relationships between parent
 
 ![ERD Diagram](erd.png)
 
-1. **Loading to the database**
+3. **Loading to the database**
 
 The final step was to write a script to create the database, tables and relationships. We used SQL alchemy to handle all data input into the PostgreSQL database. This data can be further used to run queries and find out more information about Toronto Public library.
 
