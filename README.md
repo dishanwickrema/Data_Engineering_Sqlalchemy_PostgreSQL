@@ -12,7 +12,7 @@ The ETL project comprised of Toronto Public Library data, which combined multipl
 
 The primary web source we used was &quot;[https://opendata.tpl.ca/](https://opendata.tpl.ca/).&quot; This link lead us to some equally interesting data to work with. The data was in different formats like JSON, CSV, KML, and XML.
 
-1. **Data Sets Extracted**
+**1. Data Sets Extracted**
 
 First step for the project was to extract the data. We also used the URL for the list of library branches. Some of the datasets we considered for our project are about active-cardholders, branch information, hours of operation, workstations and new registrations.
 
@@ -35,17 +35,17 @@ JSON
 
 	m)url = &quot;https://opendata.tpl.ca/resources/events&quot;
 
-2. **Transformation**
+**2. Transformation**
 
 The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. There were different tables that need to be connected through primary key. It took us a lot of time to decide the schema. We used ERD to finalize the schema.
 
-**ERD Diagram**
+	**ERD Diagram**
 
 Database is normalized upto 3rd normal fom, and the relationships between parent and child tables are shown in the underneath entity relationship diagram.
 
 ![ERD Diagram](erd.png)
 
-3. **Loading to the database**
+**3. Loading: the database**
 
 The final step was to write a script to create the database, tables and relationships. We used SQL alchemy to handle all data input into the PostgreSQL database. This data can be further used to run queries and find out more information about Toronto Public library.
 
