@@ -51,7 +51,7 @@ The final step was to write a script to create the database, tables and relation
 
 Few queries run against the database are shown below.
 
-	1. Pre-school events happening in &quot;Etobicoke Region&quot; in next week (Aug-24 to Aug-31)
+	1. Pre-school events happening in Etobicoke Region in next week (Aug-24 to Aug-31)
 
 ![Query 1](query1.png)
 
