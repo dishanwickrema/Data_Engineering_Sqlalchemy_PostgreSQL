@@ -18,22 +18,22 @@ First step for the project was to extract the data. We also used the URL for the
 
 Following is the list of the csv files used to build the database.
 
-1. a)Active\_Cardholders _= pd.read\_csv(&quot;resources/Active\_Cardholders.csv&quot;)_
-2. b)Active\_Cardholders\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Active\_Cardholders\_by\_Cardholder\_Type.csv&quot;)_
-3. c)Annual\_Visits = _pd.read\_csv(&quot;resources/Annual\_Visits.csv&quot;)_
-4. d)Catchment\_Population = _pd.read\_csv(&quot;resources/Catchment\_Population.csv&quot;)_
-5. e)Collection\_Size = _pd.read\_csv(&quot;resources/Collection\_Size.csv&quot;)_
-6. f)Hours\_of\_Operation = _pd.read\_csv(&quot;resources/Hours\_of\_Operation.csv&quot;)_
-7. g)New\_Registrations = _pd.read\_csv(&quot;resources/New\_Registrations.csv&quot;)_
-8. h)Registered\_Cardholders = _pd.read\_csv(&quot;resources/Registered\_Cardholders.csv&quot;)_
-9. i)Registered\_Cardholders\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Registered\_Cardholders\_by\_Cardholder\_Type.csv&quot;)_
-10. j)Circulation\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Circulation\_by\_Cardholder\_Type.csv&quot;)_
-11. k)Workstations = _pd.read\_csv(&quot;resources/Workstations.csv&quot;)_
-12. l)_Workstation\_Users = pd.read\_csv(&quot;resources/Workstation\_Users.csv&quot;)_
+	a)Active\_Cardholders _= pd.read\_csv(&quot;resources/Active\_Cardholders.csv&quot;)_
+	b)Active\_Cardholders\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Active\_Cardholders\_by\_Cardholder\_Type.csv&quot;)_
+	c)Annual\_Visits = _pd.read\_csv(&quot;resources/Annual\_Visits.csv&quot;)_
+	d)Catchment\_Population = _pd.read\_csv(&quot;resources/Catchment\_Population.csv&quot;)_
+	e)Collection\_Size = _pd.read\_csv(&quot;resources/Collection\_Size.csv&quot;)_
+	f)Hours\_of\_Operation = _pd.read\_csv(&quot;resources/Hours\_of\_Operation.csv&quot;)_
+	g)New\_Registrations = _pd.read\_csv(&quot;resources/New\_Registrations.csv&quot;)_
+	h)Registered\_Cardholders = _pd.read\_csv(&quot;resources/Registered\_Cardholders.csv&quot;)_
+	i)Registered\_Cardholders\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Registered\_Cardholders\_by\_Cardholder\_Type.csv&quot;)_
+	j)Circulation\_by\_Cardholder\_Type = _pd.read\_csv(&quot;resources/Circulation\_by\_Cardholder\_Type.csv&quot;)_
+	k)Workstations = _pd.read\_csv(&quot;resources/Workstations.csv&quot;)_
+	l)_Workstation\_Users = pd.read\_csv(&quot;resources/Workstation\_Users.csv&quot;)_
 
 JSON
 
-1. m)url = &quot;https://opendata.tpl.ca/resources/events&quot;
+	m)url = &quot;https://opendata.tpl.ca/resources/events&quot;
 
 1. **Transformation**
 
