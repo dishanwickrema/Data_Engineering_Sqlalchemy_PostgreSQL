@@ -16,22 +16,22 @@ First step for the project was to extract the data. We also used the URL for the
 
 Following is the list of the csv files used to build the database.
 
-	a)Active_Cardholders = pd.read_csv(resources/Active_Cardholders.csv)_
-	b)Active_Cardholders_by_Cardholder_Type = _pd.read_csv(resources/Active_Cardholders_by_Cardholder_Type.csv)_
-	c)Annual_Visits = _pd.read_csv(resources/Annual_Visits.csv)_
-	d)Catchment_Population = _pd.read_csv(resources/Catchment_Population.csv)_
-	e)Collection_Size = _pd.read_csv(resources/Collection_Size.csv)_
-	f)Hours_of_Operation = _pd.read_csv(resources/Hours_of_Operation.csv)_
-	g)New_Registrations = _pd.read_csv(resources/New_Registrations.csv)_
-	h)Registered_Cardholders = _pd.read_csv(resources/Registered_Cardholders.csv)_
-	i)Registered_Cardholders_by_Cardholder_Type = _pd.read_csv(resources/Registered_Cardholders_by_Cardholder_Type.csv)_
-	j)Circulation_by_Cardholder_Type = _pd.read_csv(resources/Circulation_by_Cardholder_Type.csv)_
-	k)Workstations = _pd.read_csv(resources/Workstations.csv)_
-	l)_Workstation_Users = pd.read_csv(resources/Workstation_Users.csv)_
+	a)Active_Cardholders = pd.read_csv(resources/Active_Cardholders.csv)
+	b)Active_Cardholders_by_Cardholder_Type = pd.read_csv(resources/Active_Cardholders_by_Cardholder_Type.csv)
+	c)Annual_Visits = pd.read_csv(resources/Annual_Visits.csv)
+	d)Catchment_Population = pd.read_csv(resources/Catchment_Population.csv)
+	e)Collection_Size = pd.read_csv(resources/Collection_Size.csv)
+	f)Hours_of_Operation = pd.read_csv(resources/Hours_of_Operation.csv)
+	g)New_Registrations = pd.read_csv(resources/New_Registrations.csv)
+	h)Registered_Cardholders = pd.read_csv(resources/Registered_Cardholders.csv)
+	i)Registered_Cardholders_by_Cardholder_Type = pd.read_csv(resources/Registered_Cardholders_by_Cardholder_Type.csv)
+	j)Circulation_by_Cardholder_Type = pd.read_csv(resources/Circulation_by_Cardholder_Type.csv)
+	k)Workstations = pd.read_csv(resources/Workstations.csv)
+	l)Workstation_Users = pd.read_csv(resources/Workstation_Users.csv)
 
 JSON
 
-	m)url = https://opendata.tpl.ca/resources/events
+	m)Events = https://opendata.tpl.ca/resources/events
 
 **2. Transformation**
 
