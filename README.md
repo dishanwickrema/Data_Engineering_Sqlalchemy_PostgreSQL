@@ -39,7 +39,7 @@ JSON
 
 The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. There were different tables that need to be connected through primary key. It took us a lot of time to decide the schema. We used ERD to finalize the schema.
 
-	**ERD Diagram**
+**ERD Diagram**
 
 Database is normalized upto 3rd normal fom, and the relationships between parent and child tables are shown in the underneath entity relationship diagram.
 
@@ -51,17 +51,17 @@ The final step was to write a script to create the database, tables and relation
 
 Few queries run against the database are shown below.
 
-1. Pre-school events happening in &quot;Etobicoke Region&quot; in next week (Aug-24 to Aug-31)
+	1. Pre-school events happening in &quot;Etobicoke Region&quot; in next week (Aug-24 to Aug-31)
 
 ![Query 1](query1.png)
 
 
-2. Branches drew high demand of registration in last 5 years
+	2. Branches drew high demand of registration in last 5 years
 
 ![Query 2](query2.png)
 
 
-3. Libraries open on Sundays in Toronto Rosedale area
+	3. Libraries open on Sundays in Toronto Rosedale area
 
 ![Query 3](query3.png)
 
