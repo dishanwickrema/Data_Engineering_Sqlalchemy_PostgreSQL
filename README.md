@@ -1,8 +1,8 @@
 # Week-13_ETL-Project
 
-											1. Dishan Wickremasinghe
-											2. Sumati Bhala
-											3. Muqtasid Alam
+											Dishan Wickremasinghe
+											Sumati Bhala
+											Muqtasid Alam
 
 
 **Week 13 - ETL Project Report**
