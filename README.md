@@ -1,6 +1,5 @@
 # Week 13 ETL Project
-
-											Dishan Wickremasinghe										
+											Dishan Wickremasinghe
 
 The ETL project comprised of Toronto Public Library data, which combined multiple data sources to perform data extraction, normalization and finally transformed them to depict how different branches performed along with their in-house programs offered in the past years.
 
@@ -31,7 +30,8 @@ JSON
 
 **2. Transformation**
 
-The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. There were different tables that need to be connected through primary key. It took us a lot of time to decide the schema. We used ERD to finalize the schema.
+The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. I came up with a python code to generate a table of data from the CSV tabular formatted data. For example;
+
 
 **ERD Diagram**
 
