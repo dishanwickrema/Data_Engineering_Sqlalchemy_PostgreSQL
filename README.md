@@ -1,10 +1,6 @@
 # Week 13 ETL Project
 
-											Dishan Wickremasinghe
-											Sumati Bhala
-											Muqtasid Alam
-
-
+											Dishan Wickremasinghe										
 
 The ETL project comprised of Toronto Public Library data, which combined multiple data sources to perform data extraction, normalization and finally transformed them to depict how different branches performed along with their in-house programs offered in the past years.
 
