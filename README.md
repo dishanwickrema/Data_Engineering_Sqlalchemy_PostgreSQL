@@ -35,6 +35,8 @@ The data sets had multiple values so the first step was to normalize the data. F
 For example sample of Active Card Holders read from the CSV
 ![Active Card Holders](cardholdertype.png)
 
+I came with the following code to generate data in a table type for each csv we downloaded.
+![python_code](python-code.png)
 
 **ERD Diagram**
 
@@ -62,13 +64,3 @@ Few queries run against the database are shown below.
 
 ![Query 3](query3.png)
 
-
-**Why we chose this?**
-
-Majority of the data was in CSV format so it seemed like a perfect choice to use relational database to store the final database.
-
-**Additional learning:**
-
-Web scraping with beautiful soup. We tried to use some of the web scraping skills we learned this to get a list of books from the library web page.
-
-[https://www.torontopubliclibrary.ca/books-video-music/new-items.jsp?category=Adult+Fiction](https://www.torontopubliclibrary.ca/books-video-music/new-items.jsp?category=Adult+Fiction)
