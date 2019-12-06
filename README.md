@@ -30,7 +30,10 @@ JSON
 
 **2. Transformation**
 
-The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. I came up with a python code to generate a table of data from the CSV tabular formatted data. For example;
+The data sets had multiple values so the first step was to normalize the data. Followed by data cleaning with python scripts. I came up with a python code to generate a table of data from the CSV tabular formatted data. 
+
+For example sample of Active Card Holders read from the CSV
+![Active Card Holders](cardholdertype.png)
 
 
 **ERD Diagram**
